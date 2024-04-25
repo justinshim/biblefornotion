@@ -1,95 +1,98 @@
-# API da Almeida Revista e Corrigida - Bíblia via GitHub
+# API da Bíblia Almeida Revista e Corrigida via GitHub
 
-## API
-```sh
-https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/{id_livro}/{captulo}/{versiculo}.json
+## Descrição
+Este repositório fornece uma API simples para acessar versículos da Bíblia Almeida Revista e Corrigida (ARC) diretamente do GitHub. Os versículos estão disponíveis em formato JSON.
 
-
+## Endpoint da API
 ```
-
+https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/{id_livro}/{capitulo}/{versiculo}.json
+```
 
 ## Exemplo de Uso
 
-```sh
+Para obter o versículo 1 do capítulo 2 do livro "2 Coríntios", acesse o seguinte URL:
 
-
+```
 https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/2corintios/2/1.json
-
-
 ```
 
-## IDs
+## IDs dos Livros
 
-```json
-[
-  { "id": "genesis", "name": "Gênesis" },
-  { "id": "exodo", "name": "Êxodo" },
-  { "id": "levitico", "name": "Levítico" },
-  { "id": "numeros", "name": "Números" },
-  { "id": "deuteronomio", "name": "Deuteronômio" },
-  { "id": "josue", "name": "Josué" },
-  { "id": "juizes", "name": "Juízes" },
-  { "id": "rute", "name": "Rute" },
-  { "id": "1samuel", "name": "1 Samuel" },
-  { "id": "2samuel", "name": "2 Samuel" },
-  { "id": "1reis", "name": "1 Reis" },
-  { "id": "2reis", "name": "2 Reis" },
-  { "id": "1cronicas", "name": "1 Crônicas" },
-  { "id": "2cronicas", "name": "2 Crônicas" },
-  { "id": "esdras", "name": "Esdras" },
-  { "id": "neemias", "name": "Neemias" },
-  { "id": "ester", "name": "Ester" },
-  { "id": "jo", "name": "Jó" },
-  { "id": "salmos", "name": "Salmos" },
-  { "id": "proverbios", "name": "Provérbios" },
-  { "id": "eclesiastes", "name": "Eclesiastes" },
-  { "id": "canticos", "name": "Cânticos" },
-  { "id": "isaias", "name": "Isaías" },
-  { "id": "jeremias", "name": "Jeremias" },
-  { "id": "lamentacoes", "name": "Lamentações de Jeremias" },
-  { "id": "ezequiel", "name": "Ezequiel" },
-  { "id": "daniel", "name": "Daniel" },
-  { "id": "oseias", "name": "Oséias" },
-  { "id": "joel", "name": "Joel" },
-  { "id": "amos", "name": "Amós" },
-  { "id": "obadias", "name": "Obadias" },
-  { "id": "jonas", "name": "Jonas" },
-  { "id": "miqueias", "name": "Miquéias" },
-  { "id": "naum", "name": "Naum" },
-  { "id": "habacuque", "name": "Habacuque" },
-  { "id": "sofonias", "name": "Sofonias" },
-  { "id": "ageu", "name": "Ageu" },
-  { "id": "zacarias", "name": "Zacarias" },
-  { "id": "malaquias", "name": "Malaquias" },
-  { "id": "mateus", "name": "Mateus" },
-  { "id": "marcos", "name": "Marcos" },
-  { "id": "lucas", "name": "Lucas" },
-  { "id": "joao", "name": "João" },
-  { "id": "atos", "name": "Atos" },
-  { "id": "romanos", "name": "Romanos" },
-  { "id": "1corintios", "name": "1 Coríntios" },
-  { "id": "2corintios", "name": "2 Coríntios" },
-  { "id": "galatas", "name": "Gálatas" },
-  { "id": "efesios", "name": "Efésios" },
-  { "id": "filipenses", "name": "Filipenses" },
-  { "id": "colossenses", "name": "Colossenses" },
-  { "id": "1tessalonicenses", "name": "1 Tessalonicenses" },
-  { "id": "2tessalonicenses", "name": "2 Tessalonicenses" },
-  { "id": "1timoteo", "name": "1 Timóteo" },
-  { "id": "2timoteo", "name": "2 Timóteo" },
-  { "id": "tito", "name": "Tito" },
-  { "id": "filemom", "name": "Filemom" },
-  { "id": "hebreus", "name": "Hebreus" },
-  { "id": "tiago", "name": "Tiago" },
-  { "id": "1pedro", "name": "1 Pedro" },
-  { "id": "2pedro", "name": "2 Pedro" },
-  { "id": "1joao", "name": "1 João" },
-  { "id": "2joao", "name": "2 João" },
-  { "id": "3joao", "name": "3 João" },
-  { "id": "judas", "name": "Judas" },
-  { "id": "apocalipse", "name": "Apocalipse" }
-]
-```
+A tabela abaixo lista os IDs e nomes dos livros disponíveis na API:
 
+| ID            | Nome                  |
+|---------------|-----------------------|
+| genesis       | Gênesis               |
+| exodo         | Êxodo                 |
+| levitico      | Levítico              |
+| numeros       | Números               |
+| deuteronomio  | Deuteronômio          |
+| josue         | Josué                 |
+| juizes        | Juízes                |
+| rute          | Rute                  |
+| 1samuel       | 1 Samuel              |
+| 2samuel       | 2 Samuel              |
+| 1reis         | 1 Reis                |
+| 2reis         | 2 Reis                |
+| 1cronicas     | 1 Crônicas            |
+| 2cronicas     | 2 Crônicas            |
+| esdras        | Esdras                |
+| neemias       | Neemias               |
+| ester         | Ester                 |
+| jo            | Jó                    |
+| salmos        | Salmos                |
+| proverbios    | Provérbios            |
+| eclesiastes   | Eclesiastes           |
+| canticos      | Cânticos              |
+| isaias        | Isaías                |
+| jeremias      | Jeremias              |
+| lamentacoes   | Lamentações de Jeremias|
+| ezequiel      | Ezequiel              |
+| daniel        | Daniel                |
+| oseias        | Oséias                |
+| joel          | Joel                  |
+| amos          | Amós                  |
+| obadias       | Obadias               |
+| jonas         | Jonas                 |
+| miqueias      | Miquéias              |
+| naum          | Naum                  |
+| habacuque     | Habacuque             |
+| sofonias      | Sofonias              |
+| ageu          | Ageu                  |
+| zacarias      | Zacarias              |
+| malaquias     | Malaquias             |
+| mateus        | Mateus                |
+| marcos        | Marcos                |
+| lucas         | Lucas                 |
+| joao          | João                  |
+| atos          | Atos                  |
+| romanos       | Romanos               |
+| 1corintios    | 1 Coríntios           |
+| 2corintios    | 2 Coríntios           |
+| galatas       | Gálatas               |
+| efesios       | Efésios               |
+| filipenses    | Filipenses            |
+| colossenses   | Colossenses           |
+| 1tessalonicenses | 1 Tessalonicenses   |
+| 2tessalonicenses | 2 Tessalonicenses   |
+| 1timoteo      | 1 Timóteo             |
+| 2timoteo      | 2 Timóteo             |
+| tito          | Tito                  |
+| filemom       | Filemom               |
+| hebreus       | Hebreus               |
+| tiago         | Tiago                 |
+| 1pedro        | 1 Pedro               |
+| 2pedro        | 2 Pedro               |
+| 1joao         | 1 João                |
+| 2joao         | 2 João                |
+| 3joao         | 3 João                |
+| judas         | Judas                 |
+| apocalipse    | Apocalipse            |
 
+## Contribuindo
+Este repositório está aberto a contribuições. Sinta-se à vontade para propor melhorias ou adicionar novos recursos. Para contribuir, por favor, envie um pull request com suas alterações.
 
+Se encontrar algum problema ou tiver alguma sugestão, abra uma issue para discutirmos.
+
+## Licença
+Este projeto é distribuído sob a licença [MIT](LICENSE).
