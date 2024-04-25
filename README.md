@@ -1,4 +1,4 @@
-# API da Bíblia Almeida Revista e Corrigida via GitHub
+# API da Bíblia Almeida Revista e Corrigida via GitHub 🇧🇷
 
 ## Descrição
 Este repositório fornece uma API simples para acessar versículos da Bíblia Almeida Revista e Corrigida (ARC) diretamente do GitHub. Os versículos estão disponíveis em formato JSON.
