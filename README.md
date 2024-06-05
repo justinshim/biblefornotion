@@ -7,7 +7,7 @@ Este repositório fornece uma API simples para acessar versículos da Bíblia Al
 ## Endpoint da API
 
 ```
-https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/{id_livro}/{capitulo}/{versiculo}.json
+https://raw.githubusercontent.com/maatheusgois/biblia/main/{versao-biblia}/{id_livro}/{capitulo}/{versiculo}.json
 ```
 
 ## Exemplo de Uso
@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/{id_livro}
 Para obter o versículo 1 do capítulo 2 do livro "2 Coríntios", acesse o seguinte URL:
 
 ```
-https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/2corintios/2/1.json
+https://raw.githubusercontent.com/maatheusgois/biblia/main/arc/2corintios/2/1.json
 ```
 
 ## IDs das Versões
