@@ -4,18 +4,51 @@
 
 Este repositório fornece uma API simples para acessar versículos da Bíblia Almeida Revista e Corrigida (ARC) diretamente do GitHub. Os versículos estão disponíveis em formato JSON.
 
-## Endpoint da API
+# Endpoints
+
+# Bíblia completa
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/{versao-biblia}/{id_livro}/{capitulo}/{versiculo}.json
+https://raw.githubusercontent.com/maatheusgois/biblia/main/completa/{versao-biblia}.json
 ```
 
-## Exemplo de Uso
+### Exemplo:
+```sh
+curl https://raw.githubusercontent.com/maatheusgois/biblia/main/completa/arc.json
+```
 
-Para obter o versículo 1 do capítulo 2 do livro "2 Coríntios", acesse o seguinte URL:
+## Livros
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/arc/2corintios/2/1.json
+https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/{versao-biblia}/{id_livro}/{id_livro}.json
+```
+
+### Exemplo:
+```sh
+curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/arc/genesis/genesis.json
+```
+
+
+## Capitulo e versiculo
+```
+https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/{versao-biblia}/{id_livro}/{capitulo}/{versiculo}.json
+```
+
+### Exemplo:
+
+```sh
+curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/arc/2corintios/2/1.json
+```
+
+# Sumário
+
+```
+https://raw.githubusercontent.com/maatheusgois/biblia/main/sumario/ids.json
+```
+
+### Exemplo:
+```sh
+curl https://raw.githubusercontent.com/maatheusgois/biblia/main/sumario/ids.json
 ```
 
 ## IDs das Versões

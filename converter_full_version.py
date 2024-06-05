@@ -19,10 +19,10 @@ def create_directories_and_files(main_folder, data):
                     json.dump(decoded_string, f, ensure_ascii=False)
 
 # Read the JSON file
-json_files = os.listdir('versoes-completas')
+json_files = os.listdir('completa')
 
 for json_file in json_files:
-    json_file = f'versoes-completas/{json_file}'
+    json_file = f'completa/{json_file}'
 
     with open(json_file, encoding='utf-8-sig') as f:
         data = json.load(f)
