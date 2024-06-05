@@ -6,7 +6,7 @@ Este repositório fornece uma API simples para acessar versículos da Bíblia Al
 
 # Postman
 
-Veja a api completa aqui: [API no Postman](https://documenter.getpostman.com/view/11242574/2sA3Qy7VeH#58ac53de-96d2-44f6-9f2e-31290ddc2812)
+Veja a api completa aqui: [API no Postman](https://documenter.getpostman.com/view/11242574/2sA3Qy7VeH)
 
 # Endpoints
 
