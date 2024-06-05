@@ -16,6 +16,19 @@ Para obter o versículo 1 do capítulo 2 do livro "2 Coríntios", acesse o segui
 https://raw.githubusercontent.com/ReposUniversity/biblia-arc/main/arc/2corintios/2/1.json
 ```
 
+## IDs das Versões
+
+A tabela abaixo lista os IDs e nomes das versões disponíveis na API:
+
+|-----------|-----------------------------|
+| ID        | Versão                      |
+|-----------|-----------------------------|
+| aa        | Almeida Atualizada          |
+| acf       | Almeida Corrigida Fiel      |
+| arc       | Almeida Revista e Corrigida |
+| kja       | King James Atualizada       |
+| nvi       | Nova Versão Internacional   |
+
 ## IDs dos Livros
 
 A tabela abaixo lista os IDs e nomes dos livros disponíveis na API:
