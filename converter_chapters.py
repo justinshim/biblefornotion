@@ -22,6 +22,6 @@ for json_file in json_files:
     with open(json_file, encoding='utf-8-sig') as f:
         data = json.load(f)
 
-    version = json_file.replace('.json', '')
+    main_folder = json_file.replace('.json', '')
 
-    create_directories_and_files(version, data)
+    create_directories_and_files(main_folder, data)
