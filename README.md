@@ -15,12 +15,12 @@ Check out the API versions here: [API on Postman](https://documenter.getpostman.
 To access the Bible translations, use the following endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/{language}/{bible-version}.json
+https://raw.githubusercontent.com/maatheusgois/bible/main/versions/{language}/{bible-version}.json
 ```
 
 ### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/pt-br/arc.json
+curl https://raw.githubusercontent.com/maatheusgois/bible/main/versions/pt-br/arc.json
 ```
 
 ## Books
@@ -28,12 +28,12 @@ curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/pt-br/a
 To access specific books within a Bible version, use this endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/{language}/{bible-version}/{book-id}/{book-id}.json
+https://raw.githubusercontent.com/maatheusgois/bible/main/versions/{language}/{bible-version}/{book-id}/{book-id}.json
 ```
 
 ### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/pt-br/arc/genesis/genesis.json
+curl https://raw.githubusercontent.com/MaatheusGois/bible/main/versions/pt-br/arc/gn/gn.json
 ```
 
 ## Chapter and Verse
@@ -41,12 +41,12 @@ curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/pt-br/a
 To access specific chapters and verses within a book, use the following endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/{language}/{bible-version}/{book-id}/{chapter}/{verse}.json
+https://raw.githubusercontent.com/maatheusgois/bible/main/versions/{language}/{bible-version}/{book-id}/{chapter}/{verse}.json
 ```
 
 ### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/pt-br/arc/2corintios/2/1.json
+curl https://raw.githubusercontent.com/maatheusgois/bible/main/versions/pt-br/arc/2ch/2/1.json
 ```
 
 ## Index
@@ -54,12 +54,12 @@ curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versions/pt-br/a
 To get all available Bible versions and books, use this endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/sumary/index.json
+https://raw.githubusercontent.com/maatheusgois/bible/main/sumary/index.json
 ```
 
 ### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/sumary/index.json
+curl https://raw.githubusercontent.com/maatheusgois/bible/main/sumary/index.json
 ```
 
 ## Summary
@@ -67,12 +67,12 @@ curl https://raw.githubusercontent.com/maatheusgois/biblia/main/sumary/index.jso
 To get a summary of all available Bible versions and books, use this endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/sumary/ids.json
+https://raw.githubusercontent.com/maatheusgois/bible/main/sumary/ids.json
 ```
 
 ### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/sumary/ids.json
+curl https://raw.githubusercontent.com/maatheusgois/bible/main/sumary/ids.json
 ```
 
 ## Languages and Versions
