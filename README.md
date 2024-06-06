@@ -154,104 +154,92 @@ The summary endpoint provides an overview of available languages and versions. F
 |-------------|--------------|------------|
 | vi          | Tiếng Việt   | vietnamese |
 
-## IDs das Versões
 
-A tabela abaixo lista os IDs e nomes das versões disponíveis na API:
+# Book IDs
 
-|-----------|-----------------------------|
-| ID | Versão |
-|-----------|-----------------------------|
-| aa | Almeida Atualizada |
-| acf | Almeida Corrigida Fiel |
-| arc | Almeida Revista e Corrigida |
-| kja | King James Atualizada |
-| nvi | Nova Versão Internacional |
+The table below lists the IDs and names of the books available in the API:
 
-## IDs dos Livros
+| ID    | Name                    |
+|-------|-------------------------|
+| gn    | Genesis                 |
+| ex    | Exodus                  |
+| lv    | Leviticus               |
+| nm    | Numbers                 |
+| dt    | Deuteronomy             |
+| js    | Joshua                  |
+| jud   | Judges                  |
+| rt    | Ruth                    |
+| 1sm   | 1 Samuel                |
+| 2sm   | 2 Samuel                |
+| 1kgs  | 1 Kings                 |
+| 2kgs  | 2 Kings                 |
+| 1ch   | 1 Chronicles            |
+| 2ch   | 2 Chronicles            |
+| ezr   | Ezra                    |
+| ne    | Nehemiah                |
+| et    | Esther                  |
+| job   | Job                     |
+| ps    | Psalms                  |
+| prv   | Proverbs                |
+| ec    | Ecclesiastes            |
+| so    | Song of Solomon         |
+| is    | Isaiah                  |
+| jr    | Jeremiah                |
+| lm    | Lamentations            |
+| ez    | Ezekiel                 |
+| dn    | Daniel                  |
+| ho    | Hosea                   |
+| jl    | Joel                    |
+| am    | Amos                    |
+| ob    | Obadiah                 |
+| jn    | Jonah                   |
+| mi    | Micah                   |
+| na    | Nahum                   |
+| hk    | Habakkuk                |
+| zp    | Zephaniah               |
+| hg    | Haggai                  |
+| zc    | Zechariah               |
+| ml    | Malachi                 |
+| mt    | Matthew                 |
+| mk    | Mark                    |
+| lk    | Luke                    |
+| jo    | John                    |
+| act   | Acts                    |
+| rm    | Romans                  |
+| 1co   | 1 Corinthians           |
+| 2co   | 2 Corinthians           |
+| gl    | Galatians               |
+| eph   | Ephesians               |
+| ph    | Philippians             |
+| cl    | Colossians              |
+| 1ts   | 1 Thessalonians         |
+| 2ts   | 2 Thessalonians         |
+| 1tm   | 1 Timothy               |
+| 2tm   | 2 Timothy               |
+| tt    | Titus                   |
+| phm   | Philemon                |
+| hb    | Hebrews                 |
+| jm    | James                   |
+| 1pe   | 1 Peter                 |
+| 2pe   | 2 Peter                 |
+| 1jo   | 1 John                  |
+| 2jo   | 2 John                  |
+| 3jo   | 3 John                  |
+| jd    | Jude                    |
+| re    | Revelation              |
 
-A tabela abaixo lista os IDs e nomes dos livros disponíveis na API:
-
-| ID               | Nome                    |
-| ---------------- | ----------------------- |
-| genesis          | Gênesis                 |
-| exodo            | Êxodo                   |
-| levitico         | Levítico                |
-| numeros          | Números                 |
-| deuteronomio     | Deuteronômio            |
-| josue            | Josué                   |
-| juizes           | Juízes                  |
-| rute             | Rute                    |
-| 1samuel          | 1 Samuel                |
-| 2samuel          | 2 Samuel                |
-| 1reis            | 1 Reis                  |
-| 2reis            | 2 Reis                  |
-| 1cronicas        | 1 Crônicas              |
-| 2cronicas        | 2 Crônicas              |
-| esdras           | Esdras                  |
-| neemias          | Neemias                 |
-| ester            | Ester                   |
-| jo               | Jó                      |
-| salmos           | Salmos                  |
-| proverbios       | Provérbios              |
-| eclesiastes      | Eclesiastes             |
-| canticos         | Cânticos                |
-| isaias           | Isaías                  |
-| jeremias         | Jeremias                |
-| lamentacoes      | Lamentações de Jeremias |
-| ezequiel         | Ezequiel                |
-| daniel           | Daniel                  |
-| oseias           | Oséias                  |
-| joel             | Joel                    |
-| amos             | Amós                    |
-| obadias          | Obadias                 |
-| jonas            | Jonas                   |
-| miqueias         | Miquéias                |
-| naum             | Naum                    |
-| habacuque        | Habacuque               |
-| sofonias         | Sofonias                |
-| ageu             | Ageu                    |
-| zacarias         | Zacarias                |
-| malaquias        | Malaquias               |
-| mateus           | Mateus                  |
-| marcos           | Marcos                  |
-| lucas            | Lucas                   |
-| joao             | João                    |
-| atos             | Atos                    |
-| romanos          | Romanos                 |
-| 1corintios       | 1 Coríntios             |
-| 2corintios       | 2 Coríntios             |
-| galatas          | Gálatas                 |
-| efesios          | Efésios                 |
-| filipenses       | Filipenses              |
-| colossenses      | Colossenses             |
-| 1tessalonicenses | 1 Tessalonicenses       |
-| 2tessalonicenses | 2 Tessalonicenses       |
-| 1timoteo         | 1 Timóteo               |
-| 2timoteo         | 2 Timóteo               |
-| tito             | Tito                    |
-| filemom          | Filemom                 |
-| hebreus          | Hebreus                 |
-| tiago            | Tiago                   |
-| 1pedro           | 1 Pedro                 |
-| 2pedro           | 2 Pedro                 |
-| 1joao            | 1 João                  |
-| 2joao            | 2 João                  |
-| 3joao            | 3 João                  |
-| judas            | Judas                   |
-| apocalipse       | Apocalipse              |
-
-# Formatando
+# Formatting
 
 ```sh
 npx prettier --write .
 ```
 
-## Contribuindo
+## Contributing
 
-Este repositório está aberto a contribuições. Sinta-se à vontade para propor melhorias ou adicionar novos recursos. Para contribuir, por favor, envie um pull request com suas alterações.
+This repository is open to contributions. Feel free to propose improvements or add new features. To contribute, please submit a pull request with your changes.
 
-Se encontrar algum problema ou tiver alguma sugestão, abra uma issue para discutirmos.
+If you encounter any issues or have suggestions, please open an issue to discuss.
 
-## Licença
+## License
 
-Este projeto é distribuído sob a licença [MIT](LICENSE).
+This project is distributed under the [MIT](LICENSE) license.
