@@ -17,14 +17,14 @@ def create_directories_and_files(main_folder, data):
 def get_json_file_paths(folder):
     json_files = []
     for root, dirs, files in os.walk(folder):
-        if root.count(os.sep) - folder.count(os.sep) == 1:
+        if root.count(os.sep) - folder.count(os.sep) == 0:
             for file in files:
                 if file.endswith('.json'):
                     json_files.append(os.path.join(root, file))
     return json_files
 
 # Get the JSON file paths
-json_files = get_json_file_paths('../versions')
+json_files = get_json_file_paths('../versions/pt-br')
 
 print(json_files)
 
