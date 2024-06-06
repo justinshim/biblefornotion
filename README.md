@@ -1,59 +1,158 @@
-# API da Bíblia Almeida Revista e Corrigida via GitHub 🇧🇷
+# Bible API in GitHub 🇸🇦 🇨🇳 🇩🇪 🇬🇷 🇺🇸 🇬🇧 🇺🇳 🇪🇸 🇫🇮 🇫🇷 🇰🇷 🇧🇷 🇵🇹 🇷🇴 🇷🇺 🇻🇳
 
-## Descrição
+## Description
 
-Este repositório fornece uma API simples para acessar versículos da Bíblia Almeida Revista e Corrigida (ARC) diretamente do GitHub. Os versículos estão disponíveis em formato JSON.
+This repository provides a simple API to access verses from the Almeida Revista e Corrigida (ARC) Bible directly from GitHub. The verses are available in JSON format.
 
 # Postman
 
-Veja a api completa aqui: [API no Postman](https://documenter.getpostman.com/view/11242574/2sA3Qy7VeH)
+Check out the API versions here: [API on Postman](https://documenter.getpostman.com/view/11242574/2sA3Qy7VeH)
 
 # Endpoints
 
-# Bíblia completa
+## Bible
+
+To access the Bible translations, use the following endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/completa/{versao-biblia}.json
+https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/versions/{language}/{bible-version}.json
 ```
 
-### Exemplo:
+### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/completa/arc.json
+curl https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/versions/pt-br/arc.json
 ```
 
-## Livros
+## Books
+
+To access specific books within a Bible version, use this endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/{versao-biblia}/{id_livro}/{id_livro}.json
+https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/versions/{language}/{bible-version}/{book-id}/{book-id}.json
 ```
 
-### Exemplo:
+### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/arc/genesis/genesis.json
+curl https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/versions/pt-br/arc/genesis/genesis.json
 ```
 
+## Chapter and Verse
 
-## Capitulo e versiculo
+To access specific chapters and verses within a book, use the following endpoint:
+
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/{versao-biblia}/{id_livro}/{capitulo}/{versiculo}.json
+https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/versions/{language}/{bible-version}/{book-id}/{chapter}/{verse}.json
 ```
 
-### Exemplo:
-
+### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/versoes/arc/2corintios/2/1.json
+curl https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/versions/pt-br/arc/2corintios/2/1.json
 ```
 
-# Sumário
+## Index
+
+To get all available Bible versions and books, use this endpoint:
 
 ```
-https://raw.githubusercontent.com/maatheusgois/biblia/main/sumario/ids.json
+https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/sumary/index.json
 ```
 
-### Exemplo:
+### Try:
 ```sh
-curl https://raw.githubusercontent.com/maatheusgois/biblia/main/sumario/ids.json
+curl https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/sumary/index.json
 ```
+
+## Summary
+
+To get a summary of all available Bible versions and books, use this endpoint:
+
+```
+https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/sumary/ids.json
+```
+
+### Try:
+```sh
+curl https://raw.githubusercontent.com/maatheusgois/biblia/feature/add-english-versions/sumary/ids.json
+```
+
+## Languages and Versions
+
+The summary endpoint provides an overview of available languages and versions. For detailed information, refer to the specific endpoints provided above.
+
+### Arabic 🇸🇦
+| Language ID | Version Name         | Version ID |
+|-------------|----------------------|------------|
+| ar          | The Arabic Bible     | svd        |
+
+### Chinese 🇨🇳
+| Language ID | Version Name              | Version ID |
+|-------------|---------------------------|------------|
+| zh          | Chinese Union Version     | cuv        |
+| zh          | New Chinese Version       | ncv        |
+
+### German 🇩🇪
+| Language ID | Version Name    | Version ID |
+|-------------|-----------------|------------|
+| de          | Schlachter      | schlachter |
+
+### Greek 🇬🇷
+| Language ID | Version Name | Version ID |
+|-------------|--------------|------------|
+| el          | Modern Greek | greek      |
+
+### English 🇺🇸🇬🇧
+| Language ID | Version Name          | Version ID |
+|-------------|-----------------------|------------|
+| en          | Basic English         | bbe        |
+| en          | King James Version    | kjv        |
+
+### Esperanto 🇺🇳
+| Language ID | Version Name | Version ID |
+|-------------|--------------|------------|
+| eo          | Esperanto    | esperanto  |
+
+### Spanish 🇪🇸
+| Language ID | Version Name  | Version ID |
+|-------------|---------------|------------|
+| es          | Reina Valera  | rvr        |
+
+### Finnish 🇫🇮
+| Language ID | Version Name    | Version ID |
+|-------------|-----------------|------------|
+| fi          | Finnish Bible   | finnish    |
+| fi          | Pyhä Raamattu   | pr         |
+
+### French 🇫🇷
+| Language ID | Version Name        | Version ID |
+|-------------|---------------------|------------|
+| fr          | Le Bible de I'Épée  | apee       |
+
+### Korean 🇰🇷
+| Language ID | Version Name | Version ID |
+|-------------|--------------|------------|
+| ko          | Korean Version | ko       |
+
+### Portuguese 🇧🇷🇵🇹
+| Language ID | Version Name                         | Version ID |
+|-------------|--------------------------------------|------------|
+| pt-br       | Almeida Revisada Imprensa Bíblica    | aa         |
+| pt-br       | Almeida Corrigida e Revisada Fiel    | acf        |
+| pt-br       | Nova Versão Internacional            | nvi        |
+
+### Romanian 🇷🇴
+| Language ID | Version Name                    | Version ID |
+|-------------|---------------------------------|------------|
+| ro          | Versiunea Dumitru Cornilescu    | cornilescu |
+
+### Russian 🇷🇺
+| Language ID | Version Name        | Version ID |
+|-------------|---------------------|------------|
+| ru          | Синодальный перевод | synodal    |
+
+### Vietnamese 🇻🇳
+| Language ID | Version Name | Version ID |
+|-------------|--------------|------------|
+| vi          | Tiếng Việt   | vietnamese |
 
 ## IDs das Versões
 
