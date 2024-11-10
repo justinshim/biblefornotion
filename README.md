@@ -154,6 +154,8 @@ The summary endpoint provides an overview of available languages and versions. F
 | pt-br       | Almeida Revisada Imprensa Bíblica | aa         |
 | pt-br       | Almeida Corrigida e Revisada Fiel | acf        |
 | pt-br       | Nova Versão Internacional         | nvi        |
+| pt-br       | King James Fiel                   | kja        |
+| pt-br       | Almeida Revista e Corrigida       | arc        |
 
 ### Romanian 🇷🇴
 
