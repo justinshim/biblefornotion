@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [],
+  "headers": [],
+  "redirects": [],
+  "routes": [],
+  "files": "**/*",
+  "outputDirectory": "."
+}
